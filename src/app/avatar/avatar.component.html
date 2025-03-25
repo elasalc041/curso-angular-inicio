@@ -1,0 +1,16 @@
+<div>
+    <h1 [class]="">Nombre: {{ name }}</h1>
+    <h2>Apellido: {{ surname }}</h2>
+    <p>Edad: {{ age }}</p>
+    <p>Nacionalidad: {{ nacionalidad }}</p>
+    <p>Casado: {{ married }}</p>
+     <p>Dirección: {{ address.street }}</p>
+    <!--<p>DNI: {{ dni }}</p>--> 
+    <p> Fecha: {{ getDate() }}</p>
+    
+    <img [src]="foto" [alt]="descripcion">
+    
+    <p>Número de productos: {{ num_productos }}</p>
+    <button [disabled]=" !(num_productos > 1)">Comprar</button>
+</div>
+
